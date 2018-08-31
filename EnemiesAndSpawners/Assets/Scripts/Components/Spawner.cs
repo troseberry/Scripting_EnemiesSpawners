@@ -127,7 +127,6 @@ public class Spawner : MonoBehaviour
     public void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.yellow;
-        Vector3 iconSize = new Vector3(spawnerSize, spawnerSize, spawnerSize);
 
         for (int i = 0; i < spawnRegions.Count; i++)
         {

@@ -18,6 +18,7 @@ TextureImporter:
     21300026: Pipi_03
     21300028: Pipi_04
     21300030: Drill_01
+    21300032: Egg
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -306,13 +307,33 @@ TextureImporter:
         width: 8
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 03d33a72a8d1f9640a79b6aac7c5bc00
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Egg
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 204
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f8146c4de39171428f08b086b421df0
       vertices: []
       indices: 
       edges: []
