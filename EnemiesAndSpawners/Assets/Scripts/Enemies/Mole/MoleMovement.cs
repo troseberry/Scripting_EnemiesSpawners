@@ -8,7 +8,7 @@ public class MoleMovement : MonoBehaviour
     private float currentMoveSpeed;
     private float halfMoveSpeed;
 
-    public bool movingUpward;
+    private bool movingUpward;
 
     private Vector2 moveVector;
     private Vector2 directionVector;
