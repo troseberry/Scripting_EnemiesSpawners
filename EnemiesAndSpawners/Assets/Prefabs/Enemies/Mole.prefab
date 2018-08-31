@@ -54,6 +54,8 @@ GameObject:
   - component: {fileID: 114753795077758142}
   - component: {fileID: 114310950680554922}
   - component: {fileID: 114358050041703492}
+  - component: {fileID: 114210626947428976}
+  - component: {fileID: 114607739479310650}
   m_Layer: 0
   m_Name: Mole
   m_TagString: Untagged
@@ -111,7 +113,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1784271493156766}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.89, y: 0.82, z: 0}
+  m_LocalPosition: {x: -0.96, y: 0.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4098008483705532}
@@ -148,6 +150,22 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.4, y: 1.4}
   m_Direction: 0
+--- !u!114 &114210626947428976
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1784271493156766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0db94beea4947c2478eec94ddeba9d3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabToSpawn: {fileID: 1514313828084762, guid: 686cb49639b52e64dbfbb69fa8db7f99,
+    type: 2}
+  spawnCount: 1
+  spawnLocation: {fileID: 0}
+  spawnAsChild: 0
 --- !u!114 &114302455269546966
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -196,6 +214,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 1
+--- !u!114 &114607739479310650
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1784271493156766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b3556be5518e5478892c93756b6ff0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: a431e05c6b39df54abb40f72c2663c11, type: 3}
+  playOnlyWhenAlive: 1
 --- !u!114 &114753795077758142
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -207,7 +238,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4d2ac79a79432844848d52a5e02c252, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0.1
+  moveSpeed: 0.05
   movingUpward: 0
 --- !u!114 &114797278655403368
 MonoBehaviour:
@@ -263,7 +294,7 @@ SpriteRenderer:
   m_Sprite: {fileID: 21300030, guid: 17c702da91c54a24fbf91d9388bfbbdb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
-  m_FlipY: 1
+  m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.5, y: 1.5}
   m_AdaptiveModeThreshold: 0.5

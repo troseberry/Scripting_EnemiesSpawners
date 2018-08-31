@@ -40,5 +40,7 @@ public class MoleMovement : MonoBehaviour
         movingUpward = (transform.position.y < playerTransformY);
 
         directionVector = movingUpward ? Vector2.up : Vector2.down;
+
+        GetComponentInChildren<SpriteRenderer>().flipY = !movingUpward;
     }
 }
