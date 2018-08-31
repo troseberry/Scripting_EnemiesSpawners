@@ -1,0 +1,935 @@
+fileFormatVersion: 2
+guid: a7eb25988fc4b8440be740f38c0f032a
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: megaman_idle
+    21300002: megaman_blink
+    21300004: megaman_run_start
+    21300006: megaman_run_0
+    21300008: megaman_run_1
+    21300010: megaman_run_2
+    21300012: MegamanRush_6
+    21300014: megaman_jump
+    21300016: MegamanRush_8
+    21300018: MegamanRush_9
+    21300020: megaman_hurt
+    21300022: megaman_shoot
+    21300024: megaman_run_0_shoot
+    21300026: megaman_run_1_shoot
+    21300028: megaman_run_2_shoot
+    21300030: megaman_jump_shoot
+    21300032: MegamanRush_16
+    21300034: MegamanRush_17
+    21300036: MegamanRush_18
+    21300038: MegamanRush_19
+    21300040: MegamanRush_20
+    21300042: MegamanRush_21
+    21300044: MegamanRush_22
+    21300046: MegamanRush_23
+    21300048: MegamanRush_24
+    21300050: MegamanRush_25
+    21300052: MegamanRush_26
+    21300054: MegamanRush_27
+    21300056: MegamanRush_28
+    21300058: MegamanRush_29
+    21300060: MegamanRush_30
+    21300062: MegamanRush_31
+    21300064: MegamanRush_32
+    21300066: MegamanRush_33
+    21300068: MegamanRush_34
+    21300070: MegamanRush_35
+    21300072: MegamanRush_36
+    21300074: MegamanRush_37
+    21300076: MegamanRush_38
+    21300078: MegamanRush_39
+  externalObjects: {}
+  serializedVersion: 5
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: megaman_idle
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 31
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7991bc5f1cdced249b5834de7cf5a68d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: megaman_blink
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 31
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7863b5f68134f849a07fa50c94e8835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: megaman_run_start
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 31
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37421ab07de0b7f449d9837244679cf8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: megaman_run_0
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 31
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 634799f445894334cbbf49682bc800c2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: megaman_run_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 31
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5d97243aa7dfd34893b52c13ed6452b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: megaman_run_2
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 224
+        width: 31
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8dad8b2dd0aba244ba3589d19242820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MegamanRush_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 224
+        width: 31
+        height: 31
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 208916078e6af14438a7e882f65b346a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: megaman_jump
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 224
+        width: 31
+        height: 31
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bbf3cc852e8fbc4cb58797eca280648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MegamanRush_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 31
+        height: 31
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3df5b57e58523324dada237427df7c91
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MegamanRush_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 31
+        height: 31
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 191184c68c9835048b2e0b7f5baa71eb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: megaman_hurt
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 31
+        height: 31
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cf1e2779cfaa6849ac60da71a48c48d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: megaman_shoot
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 31
+        height: 31
+      alignment: 9
+      pivot: {x: 0.35, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea971630219ff154f9dc9579ba21bc6d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: megaman_run_0_shoot
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 31
+        height: 31
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91244fa340e18f9488342a0077c8a985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: megaman_run_1_shoot
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 31
+        height: 31
+      alignment: 9
+      pivot: {x: 0.35, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5167df45a1f4a174286a38d1f183299d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: megaman_run_2_shoot
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 31
+        height: 31
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 153227827c5880b4a94b83fd8a49cfc0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: megaman_jump_shoot
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 193
+        width: 31
+        height: 31
+      alignment: 9
+      pivot: {x: 0.43, y: 0.26}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42b255b691fa42944b5a34d7a55ba769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MegamanRush_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 31
+        height: 31
+      alignment: 9
+      pivot: {x: 0.38, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c91375e8e0681a7408485b3390dcfda6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MegamanRush_17
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 31
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c00be3b3ac5490c4c93dc5bcf31194b6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MegamanRush_18
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 31
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6854a5b2e52b4a24088364b00dab8a35
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MegamanRush_19
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 31
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a196e45b27fd0c04490b672a0dc68c63
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MegamanRush_20
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 31
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf6ba570fd7863948bcfe4a92111e453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MegamanRush_21
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 31
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bc15dfff610a3742bbe9fd6a3be1869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MegamanRush_22
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 160
+        width: 31
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cbb5e63deb70e045ac36902fc5132e3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MegamanRush_23
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 160
+        width: 31
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f5a4a640b079ac4d9521ec2f7c72b1f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MegamanRush_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 31
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b1f05777f0aac74babc5b682351d7ff
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MegamanRush_25
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 31
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 024d8a3eaf3e3fe40a61638219c2df8f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MegamanRush_26
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 31
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64a0cd1b4fc575540ade01d2b8968702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MegamanRush_27
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 31
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8f16a190cf2cf94ead443895417afae
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MegamanRush_28
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 31
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74495ec282b0a2e44b8230e75ec1dc7a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MegamanRush_29
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 31
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c35d1d4e39f03cd4ab2182f86015859a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MegamanRush_30
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 31
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeda43e7a7210c742ad8fa5d65082d91
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MegamanRush_31
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 128
+        width: 31
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b9fe2b616dbb2841a5a90a7a4144c7c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MegamanRush_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 31
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43840b66434942749ae412415cb93b4e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MegamanRush_33
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 31
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e7b71ca24c026644bf5a574969ce175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MegamanRush_34
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 31
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16d3841e075c7da41b72f9e626a2fdca
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MegamanRush_35
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 31
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a9c0ee141bd57d4388a5713e835ec32
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MegamanRush_36
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 31
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab1c2c47ca4115c42b066b9938559133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MegamanRush_37
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 31
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0192cf20217389944aa644b405a380fc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MegamanRush_38
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 31
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d30d52f6c7762544aab24ff89560cda3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MegamanRush_39
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 64
+        width: 31
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fbc24544dbe25b40aff7f318a80470a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 80da7fdde391e3e488c5eb94069b6d33
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: sprites
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
