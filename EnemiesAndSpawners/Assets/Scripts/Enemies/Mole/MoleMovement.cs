@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class MoleMovement : MonoBehaviour
 {
-
     public float moveSpeed;
     private float currentMoveSpeed;
     private float halfMoveSpeed;
@@ -20,7 +19,8 @@ public class MoleMovement : MonoBehaviour
     {
         moleGroundCheck = GetComponentInChildren<GroundCheck>();
         halfMoveSpeed = moveSpeed / 2;
-        directionVector = movingUpward ? Vector2.up : Vector2.down;
+
+        SetMoveDirection();
     }
 
     void Update ()
@@ -33,4 +33,12 @@ public class MoleMovement : MonoBehaviour
 
         transform.Translate(moveVector);
 	}
+
+    void SetMoveDirection()
+    {
+        float playerTransformY = GameObject.FindGameObjectWithTag("Player").transform.position.y;
+        movingUpward = (transform.position.y < playerTransformY);
+
+        directionVector = movingUpward ? Vector2.up : Vector2.down;
+    }
 }
