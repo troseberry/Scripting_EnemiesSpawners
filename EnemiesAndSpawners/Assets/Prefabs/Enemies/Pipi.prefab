@@ -68,6 +68,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4130105280779054}
   - component: {fileID: 114321721447286406}
+  - component: {fileID: 114286869029125102}
+  - component: {fileID: 114227513148597032}
   m_Layer: 0
   m_Name: Egg
   m_TagString: Untagged
@@ -260,7 +262,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -280,6 +282,44 @@ MonoBehaviour:
   damage: 4
   destroySelfOnHit: 0
   objectRoot: {fileID: 1829413805274842}
+--- !u!114 &114227513148597032
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1223357477557040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0db94beea4947c2478eec94ddeba9d3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabToSpawn: {fileID: 1514313828084762, guid: 686cb49639b52e64dbfbb69fa8db7f99,
+    type: 2}
+  spawnCount: 1
+  spawnLocation: {fileID: 0}
+  spawnAsChild: 0
+--- !u!114 &114286869029125102
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1223357477557040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7565c11ccebf8b43a6f364b678a587a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 1
+  destroyOnDeath: 1
+  onDamaged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: FloatEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  onDeath:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &114315218360201278
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -331,7 +371,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8732198cecbfd045974544d494b1db1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 4
   destroySelfOnHit: 0
   objectRoot: {fileID: 0}
 --- !u!114 &114631068622071234

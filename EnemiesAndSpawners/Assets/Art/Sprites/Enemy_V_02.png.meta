@@ -19,6 +19,8 @@ TextureImporter:
     21300028: Pipi_04
     21300030: Drill_01
     21300032: Egg
+    21300034: Copipi_01
+    21300036: Copipi_02
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -327,13 +329,53 @@ TextureImporter:
         width: 13
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 1f8146c4de39171428f08b086b421df0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copipi_01
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 205
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 856f31823872b4e4abeb2ae9631158ce
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copipi_02
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 205
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83ae1aecf25859248b3d5c7dbdcf2360
       vertices: []
       indices: 
       edges: []

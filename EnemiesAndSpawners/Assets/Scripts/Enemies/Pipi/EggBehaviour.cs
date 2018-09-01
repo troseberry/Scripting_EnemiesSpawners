@@ -10,6 +10,8 @@ public class EggBehaviour : MonoBehaviour
     private bool canMove;
     private Vector2 moveVector;
 
+    public GameObject copipiPrefab;
+
 	void Start ()
 	{
         eggGroundCheck = GetComponentInChildren<GroundCheck>();
@@ -34,6 +36,7 @@ public class EggBehaviour : MonoBehaviour
 
     void DestroyOnLanding()
     {
+        //Instantiate()
         Destroy(gameObject);
     }
 }
