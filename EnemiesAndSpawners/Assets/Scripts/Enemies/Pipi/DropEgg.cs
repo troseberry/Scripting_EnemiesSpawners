@@ -12,6 +12,7 @@ public class DropEgg : MonoBehaviour
 	void Start ()
 	{
         playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+        hasEgg = transform.Find("Egg").gameObject.activeSelf;
     }
 
 	void Update ()

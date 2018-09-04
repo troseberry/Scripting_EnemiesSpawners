@@ -5,7 +5,7 @@ using UnityEngine;
 public class EggBehaviour : MonoBehaviour
 {
     private GroundCheck eggGroundCheck;
-    private bool initiatedDestroy = false;
+    //private bool initiatedDestroy = false;
 
     public float dropSpeed;
     private bool canMove;
@@ -13,6 +13,8 @@ public class EggBehaviour : MonoBehaviour
 
     public GameObject copipiPrefab;
     public int copipiSpawnCount;
+    private int copipiInstantiatedCount;
+    private bool hasBrokenEgg = false;
 
 	void Start ()
 	{
@@ -27,7 +29,7 @@ public class EggBehaviour : MonoBehaviour
             transform.Translate(moveVector);
         }
 
-        if (eggGroundCheck.IsGrounded()) DestroyOnLanding();
+        if (eggGroundCheck.IsGrounded()) StartCoroutine(DestroyEggOnLanding()); //DestroyOnLanding();
     }
 
     public void ReleaseEgg()
@@ -36,16 +38,20 @@ public class EggBehaviour : MonoBehaviour
         canMove = true;
     }
 
-    void DestroyOnLanding()
+    IEnumerator DestroyEggOnLanding()
     {
-        if (!initiatedDestroy)
+        if (!hasBrokenEgg)
         {
+            hasBrokenEgg = true;
+            Debug.Log("Coroutine");
             for (int i = 0; i < copipiSpawnCount; i++)
             {
                 Instantiate(copipiPrefab, transform.position, Quaternion.identity);
+                copipiInstantiatedCount++;
             }
-            //Destroy(gameObject);
-            initiatedDestroy = true;
+
+            yield return new WaitUntil(() => copipiInstantiatedCount == copipiSpawnCount);
+            Destroy(gameObject);
         }
     }
 }

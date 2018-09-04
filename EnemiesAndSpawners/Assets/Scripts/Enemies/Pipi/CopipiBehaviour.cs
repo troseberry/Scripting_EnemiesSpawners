@@ -9,18 +9,13 @@ public class CopipiBehaviour : MonoBehaviour
     public float scatterMinDistance;
     public float scatterMaxDistance;
     private float scatterDistance;
+
     private Vector2 scatterDestination;
-
+    private Vector2 scatterDirection;
     private bool doScatter = false;
-    private bool isScattering = false;
-
-    private float scatterDuration = .2f;
-    private float scatterTimer = 0f;
-
+    
     private bool attackMegaman = false;
     private Vector2 megamanDestination;
-    private Vector2 swoopStartPos;
-
     private Vector2 megamanDirection;
 
 	void Start ()
@@ -30,13 +25,11 @@ public class CopipiBehaviour : MonoBehaviour
 
 	void Update ()
 	{
-        if (scatterTimer < scatterDuration)
+        //Debug.Log("Distance: " + Vector2.Distance((Vector2)transform.position, scatterDestination));
+
+        if (Vector2.Distance((Vector2)transform.position, scatterDestination) > 0.05 && doScatter)
         {
-            if (doScatter)
-            {
-                scatterTimer += Time.deltaTime;
-                transform.Translate(scatterDestination * moveSpeed);
-            }
+            transform.Translate(scatterDirection * (moveSpeed * Time.deltaTime));
         }
         else
         {
@@ -48,43 +41,36 @@ public class CopipiBehaviour : MonoBehaviour
             }
             else
             {
-                transform.Translate(megamanDirection * moveSpeed, Space.World);
-                //transform.position = Vector2.MoveTowards(swoopStartPos, megamanDestination, moveSpeed * Time.deltaTime);
-                Debug.Log("Going to Megaman");
+                transform.Translate(megamanDirection * (moveSpeed * Time.deltaTime));
+                //Debug.Log("Going to Megaman (Dir): " + megamanDirection);
             }
-            //Debug.Log("Should Target: " + (megamanDestination * moveSpeed));
         }
-
-
-        
     }
 
     void Scatter()
     {
         scatterDistance = Random.Range(scatterMinDistance, scatterMaxDistance);
 
-        //float randomX = Random.Range(scatterMinDistance, scatterMaxDistance);
-
-        float destinationX = transform.position.x + scatterDistance;
+        float destinationX = Random.Range(transform.position.x - scatterDistance, transform.position.x + scatterDistance);
         float destinationY = transform.position.y + scatterDistance;
+
         scatterDestination = new Vector2(destinationX, destinationY);
+        scatterDirection = (scatterDestination - (Vector2)transform.position);
 
         //Debug.Log("Destination: " + scatterDestination);
+        //Debug.Log("Distance: " + Vector2.Distance((Vector2)transform.position, scatterDestination));
 
         doScatter = true;
-
     }
 
     void TargetMegaman()
     {
         megamanDestination = GameObject.FindGameObjectWithTag("Player").transform.position;
-        //megamanDestination = new Vector2(-2, 4);
-        Debug.Log("Megaman Position: " + megamanDestination);
-        swoopStartPos = new Vector2(transform.position.x, transform.position.y);
 
-        megamanDirection = (megamanDirection - swoopStartPos).normalized;
+        //Debug.Log("Megaman Destination: " + megamanDestination);
+        //Debug.Log("Copipi Starting Position: " + transform.position);
 
-
+        megamanDirection = (megamanDestination - (Vector2)transform.position);
 
         attackMegaman = true;
     }

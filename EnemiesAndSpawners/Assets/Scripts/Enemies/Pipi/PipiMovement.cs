@@ -7,8 +7,6 @@ public class PipiMovement : MonoBehaviour
     public float moveSpeed;
 
     private bool movingLeft;
-
-    private Vector2 moveVector;
     private Vector2 directionVector;
 
 
@@ -19,10 +17,8 @@ public class PipiMovement : MonoBehaviour
 
 	void Update ()
 	{
-        moveVector = new Vector2(moveSpeed, transform.position.y) * directionVector;
-
-        transform.Translate(moveVector);
-	}
+        transform.Translate(directionVector * (moveSpeed * Time.deltaTime));
+    }
 
     void SetMoveDirection()
     {

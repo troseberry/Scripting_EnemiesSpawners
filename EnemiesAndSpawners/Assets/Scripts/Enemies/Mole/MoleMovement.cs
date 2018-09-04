@@ -10,7 +10,6 @@ public class MoleMovement : MonoBehaviour
 
     private bool movingUpward;
 
-    private Vector2 moveVector;
     private Vector2 directionVector;
 
     private GroundCheck moleGroundCheck;
@@ -25,13 +24,11 @@ public class MoleMovement : MonoBehaviour
 
     void Update ()
 	{
-        Debug.Log("Grounded: " + moleGroundCheck.IsGrounded());
-        Debug.Log("Colliding: " + moleGroundCheck.isColliding);
+        //Debug.Log("Grounded: " + moleGroundCheck.IsGrounded());
+        //Debug.Log("Colliding: " + moleGroundCheck.isColliding);
 
         currentMoveSpeed = moleGroundCheck.IsGrounded() ? halfMoveSpeed : moveSpeed;
-        moveVector = new Vector2(transform.position.x, currentMoveSpeed) * directionVector;
-
-        transform.Translate(moveVector);
+        transform.Translate(directionVector * (currentMoveSpeed * Time.deltaTime));
 	}
 
     void SetMoveDirection()
