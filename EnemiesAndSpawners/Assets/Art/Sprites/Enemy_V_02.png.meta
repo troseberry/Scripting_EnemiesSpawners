@@ -21,6 +21,7 @@ TextureImporter:
     21300032: Egg
     21300034: Copipi_01
     21300036: Copipi_02
+    21300038: Enemy_V_02_0
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -349,7 +350,7 @@ TextureImporter:
         width: 8
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -369,13 +370,33 @@ TextureImporter:
         width: 8
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 83ae1aecf25859248b3d5c7dbdcf2360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_V_02_0
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 161
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbfc3133da687984ea047681e1b1254f
       vertices: []
       indices: 
       edges: []

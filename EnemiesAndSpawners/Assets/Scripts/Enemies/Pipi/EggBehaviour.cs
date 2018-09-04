@@ -43,7 +43,7 @@ public class EggBehaviour : MonoBehaviour
         if (!hasBrokenEgg)
         {
             hasBrokenEgg = true;
-            Debug.Log("Coroutine");
+            //Debug.Log("Coroutine");
             for (int i = 0; i < copipiSpawnCount; i++)
             {
                 Instantiate(copipiPrefab, transform.position, Quaternion.identity);

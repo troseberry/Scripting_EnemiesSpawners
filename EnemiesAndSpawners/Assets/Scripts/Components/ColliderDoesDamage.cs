@@ -7,13 +7,16 @@ public class ColliderDoesDamage : MonoBehaviour
    public float damage = 1.0f; 
 
    public bool destroySelfOnHit = false; 
-   public GameObject objectRoot = null; 
+   public GameObject objectRoot = null;
+
+    private bool didDamagePlayer = false;
 
    private void ApplyDamage( GameObject go )
    {
       Health health = go.GetComponentInParent<Health>();
       if (health != null) {
          health.Damage(damage);
+            didDamagePlayer = true;
       }
 
       if (destroySelfOnHit) {
@@ -35,4 +38,14 @@ public class ColliderDoesDamage : MonoBehaviour
    {
       ApplyDamage( collision.gameObject ); 
    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        didDamagePlayer = false;
+    }
+
+    public bool DidDamagePlayer()
+    {
+        return didDamagePlayer;
+    }
 }

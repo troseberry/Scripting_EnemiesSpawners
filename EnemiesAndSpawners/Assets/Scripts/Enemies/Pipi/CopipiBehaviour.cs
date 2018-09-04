@@ -18,15 +18,19 @@ public class CopipiBehaviour : MonoBehaviour
     private Vector2 megamanDestination;
     private Vector2 megamanDirection;
 
-	void Start ()
+    private ColliderDoesDamage copipiDoesDamage;
+    private bool doRetreat = false;
+    private Vector2 retreatDirection;
+
+    void Start ()
 	{
+        copipiDoesDamage = GetComponentInChildren<ColliderDoesDamage>();
+
         Scatter();
     }
 
 	void Update ()
 	{
-        //Debug.Log("Distance: " + Vector2.Distance((Vector2)transform.position, scatterDestination));
-
         if (Vector2.Distance((Vector2)transform.position, scatterDestination) > 0.05 && doScatter)
         {
             transform.Translate(scatterDirection * (moveSpeed * Time.deltaTime));
@@ -42,9 +46,19 @@ public class CopipiBehaviour : MonoBehaviour
             else
             {
                 transform.Translate(megamanDirection * (moveSpeed * Time.deltaTime));
-                //Debug.Log("Going to Megaman (Dir): " + megamanDirection);
             }
         }
+
+        if (copipiDoesDamage.DidDamagePlayer()/* && !doRetreat*/)
+        {
+            doRetreat = true;
+            CalculateRetreatDirection();
+        }
+
+        if (doRetreat) RetreatOnDamage();
+
+        //Debug.Log("Did Damage: " + copipiDoesDamage.DidDamagePlayer());
+        //Debug.Log("Do Retreat: " + doRetreat);
     }
 
     void Scatter()
@@ -57,26 +71,27 @@ public class CopipiBehaviour : MonoBehaviour
         scatterDestination = new Vector2(destinationX, destinationY);
         scatterDirection = (scatterDestination - (Vector2)transform.position);
 
-        //Debug.Log("Destination: " + scatterDestination);
-        //Debug.Log("Distance: " + Vector2.Distance((Vector2)transform.position, scatterDestination));
-
         doScatter = true;
     }
 
     void TargetMegaman()
     {
         megamanDestination = GameObject.FindGameObjectWithTag("Player").transform.position;
-
-        //Debug.Log("Megaman Destination: " + megamanDestination);
-        //Debug.Log("Copipi Starting Position: " + transform.position);
-
         megamanDirection = (megamanDestination - (Vector2)transform.position);
 
         attackMegaman = true;
     }
 
-    IEnumerator MoveTowardMegman()
+    void CalculateRetreatDirection()
     {
-        yield return null;
+        Vector2 randomRetreatPos = Random.insideUnitCircle;
+        retreatDirection = (randomRetreatPos - (Vector2)transform.position);
+        //Debug.Log("Calc Retreat");
+    }
+
+    void RetreatOnDamage()
+    {
+        transform.Translate(retreatDirection * (moveSpeed * Time.deltaTime));
+        //Debug.Log("Retreating");
     }
 }
