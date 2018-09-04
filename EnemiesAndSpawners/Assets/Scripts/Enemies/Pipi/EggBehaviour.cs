@@ -5,12 +5,14 @@ using UnityEngine;
 public class EggBehaviour : MonoBehaviour
 {
     private GroundCheck eggGroundCheck;
+    private bool initiatedDestroy = false;
 
     public float dropSpeed;
     private bool canMove;
     private Vector2 moveVector;
 
     public GameObject copipiPrefab;
+    public int copipiSpawnCount;
 
 	void Start ()
 	{
@@ -36,7 +38,14 @@ public class EggBehaviour : MonoBehaviour
 
     void DestroyOnLanding()
     {
-        //Instantiate()
-        Destroy(gameObject);
+        if (!initiatedDestroy)
+        {
+            for (int i = 0; i < copipiSpawnCount; i++)
+            {
+                Instantiate(copipiPrefab, transform.position, Quaternion.identity);
+            }
+            //Destroy(gameObject);
+            initiatedDestroy = true;
+        }
     }
 }

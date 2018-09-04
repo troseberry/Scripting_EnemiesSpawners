@@ -344,6 +344,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dropSpeed: 0.1
+  copipiPrefab: {fileID: 1824120725676374, guid: 3d25aee0b811a694880511643bb49f55,
+    type: 2}
+  copipiSpawnCount: 5
 --- !u!114 &114384283074349360
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -435,7 +438,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b53b8daf99684149a22095e033f2b28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0.05
+  moveSpeed: 0.09
 --- !u!212 &212042625705489318
 SpriteRenderer:
   m_ObjectHideFlags: 1
