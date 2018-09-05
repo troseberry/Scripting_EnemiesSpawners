@@ -31,7 +31,7 @@ public class CopipiBehaviour : MonoBehaviour
 
 	void Update ()
 	{
-        if (Vector2.Distance((Vector2)transform.position, scatterDestination) > 0.05 && doScatter)
+        if (Vector2.Distance(transform.position, scatterDestination) > 0.05 && doScatter)
         {
             transform.Translate(scatterDirection * (moveSpeed * Time.deltaTime));
         }
@@ -49,26 +49,19 @@ public class CopipiBehaviour : MonoBehaviour
             }
         }
 
-        if (copipiDoesDamage.DidDamagePlayer()/* && !doRetreat*/)
+        if (copipiDoesDamage.DidDamagePlayer())
         {
             doRetreat = true;
             CalculateRetreatDirection();
         }
 
         if (doRetreat) RetreatOnDamage();
-
-        //Debug.Log("Did Damage: " + copipiDoesDamage.DidDamagePlayer());
-        //Debug.Log("Do Retreat: " + doRetreat);
     }
 
     void Scatter()
     {
         scatterDistance = Random.Range(scatterMinDistance, scatterMaxDistance);
-
-        float destinationX = Random.Range(transform.position.x - scatterDistance, transform.position.x + scatterDistance);
-        float destinationY = transform.position.y + scatterDistance;
-
-        scatterDestination = new Vector2(destinationX, destinationY);
+        scatterDestination = Random.insideUnitCircle * scatterDistance;
         scatterDirection = (scatterDestination - (Vector2)transform.position);
 
         doScatter = true;
@@ -86,12 +79,10 @@ public class CopipiBehaviour : MonoBehaviour
     {
         Vector2 randomRetreatPos = Random.insideUnitCircle;
         retreatDirection = (randomRetreatPos - (Vector2)transform.position);
-        //Debug.Log("Calc Retreat");
     }
 
     void RetreatOnDamage()
     {
         transform.Translate(retreatDirection * (moveSpeed * Time.deltaTime));
-        //Debug.Log("Retreating");
     }
 }

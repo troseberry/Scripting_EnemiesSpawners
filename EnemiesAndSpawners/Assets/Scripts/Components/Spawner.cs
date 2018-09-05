@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class Spawner : MonoBehaviour 
 {
@@ -23,6 +24,8 @@ public class Spawner : MonoBehaviour
 
     // controls where the spawner will instantiate objs
     public List<Bounds> spawnRegions;
+    public AnimationCurve weightedSpawnCurve;
+    private float rangeWidth;
 
     //------------------------------------------------------------------------
     void Start() 
@@ -34,6 +37,9 @@ public class Spawner : MonoBehaviour
 
         spawnTimer.Start(initialDelay);
         spawnLocation = transform.position;
+
+        rangeWidth = 1f / spawnRegions.Count;
+        spawnRegions = spawnRegions.OrderBy(region => region.extents.magnitude).ToList();
     }
 
     //------------------------------------------------------------------------
@@ -74,21 +80,32 @@ public class Spawner : MonoBehaviour
 
         if (spawnRegions.Count > 0)
         {
-            spawnLocation = spawnRegions[Random.Range(0, spawnRegions.Count)].center;
+            spawnLocation = spawnRegions[ChooseWeightedSpawnIndex()].center;
         }
       
         ++aliveCount;
 
-        // TODO: Give options for HOW it spawns; 
         int idx = Random.Range( 0, prefabList.Count ); 
         GameObject prefab = prefabList[idx]; 
-        //GameObject go = GameObject.Instantiate( prefab, transform.position, Quaternion.identity );
+
         GameObject go = GameObject.Instantiate(prefab, spawnLocation, Quaternion.identity);
 
         SpawnerChild child = go.AddComponent<SpawnerChild>(); 
         child.spawner = this; 
 
         spawnTimer.Start( delayBetweenSpawns ); 
+    }
+
+    int ChooseWeightedSpawnIndex()
+    {
+        float weightedVal = weightedSpawnCurve.Evaluate(Random.value);
+
+        int index = Mathf.RoundToInt(weightedVal / rangeWidth);
+
+        //Debug.Log("Weighted Value: " + weightedVal);
+        //Debug.Log("Calculated Index: " + index);
+
+        return index;
     }
 
    //------------------------------------------------------------------------

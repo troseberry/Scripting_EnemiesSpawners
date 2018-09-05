@@ -3133,7 +3133,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &630832950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3154,9 +3154,33 @@ MonoBehaviour:
   spawnerSize: 1
   spawnRegions:
   - m_Center: {x: -9.5, y: -2.5, z: 0}
-    m_Extent: {x: 3, y: 3, z: 0}
+    m_Extent: {x: 5, y: 5, z: 0}
   - m_Center: {x: 11.5, y: -2.5, z: 0}
-    m_Extent: {x: 2, y: 2, z: 0}
+    m_Extent: {x: 1, y: 1, z: 0}
+  weightedSpawnCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -2.9863696
+      outSlope: -2.9863696
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.038998697
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: -0.017559325
+      outSlope: -0.017559325
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.2083157
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!4 &630832951
 Transform:
   m_ObjectHideFlags: 0
@@ -3324,6 +3348,12 @@ MonoBehaviour:
     m_Extent: {x: 1, y: 1, z: 0}
   - m_Center: {x: 7.75, y: -7.5, z: 0}
     m_Extent: {x: 1, y: 1, z: 0}
+  weightedSpawnCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!4 &976062744
 Transform:
   m_ObjectHideFlags: 0
@@ -4794,7 +4824,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1829413805274842, guid: e5706b6e62932c1418febbb9e2ac4dfb, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1223357477557040, guid: e5706b6e62932c1418febbb9e2ac4dfb, type: 2}
       propertyPath: m_IsActive
@@ -4956,7 +4986,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1420209302
 Transform:
   m_ObjectHideFlags: 0
@@ -4989,6 +5019,12 @@ MonoBehaviour:
   spawnOnlyWhenVisible: 1
   spawnerSize: 1
   spawnRegions: []
+  weightedSpawnCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1487448131
 GameObject:
   m_ObjectHideFlags: 0
@@ -5024,6 +5060,12 @@ MonoBehaviour:
   spawnOnlyWhenVisible: 1
   spawnerSize: 1
   spawnRegions: []
+  weightedSpawnCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!4 &1487448133
 Transform:
   m_ObjectHideFlags: 0
