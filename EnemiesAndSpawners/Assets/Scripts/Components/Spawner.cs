@@ -26,6 +26,7 @@ public class Spawner : MonoBehaviour
     public List<Bounds> spawnRegions;
     public AnimationCurve weightedSpawnCurve;
     private float rangeWidth;
+    
 
     //------------------------------------------------------------------------
     void Start() 
@@ -40,6 +41,8 @@ public class Spawner : MonoBehaviour
 
         rangeWidth = 1f / spawnRegions.Count;
         spawnRegions = spawnRegions.OrderBy(region => region.extents.magnitude).ToList();
+
+        DefineWeightedSpawnCurve();
     }
 
     //------------------------------------------------------------------------
@@ -96,16 +99,16 @@ public class Spawner : MonoBehaviour
         spawnTimer.Start( delayBetweenSpawns ); 
     }
 
+    void DefineWeightedSpawnCurve()
+    {
+        weightedSpawnCurve = new AnimationCurve();
+        weightedSpawnCurve.AddKey(new Keyframe(0, 0, 2, 2));
+        weightedSpawnCurve.AddKey(new Keyframe(1, 1, 0, 0));
+    }
+
     int ChooseWeightedSpawnIndex()
     {
-        float weightedVal = weightedSpawnCurve.Evaluate(Random.value);
-
-        int index = Mathf.RoundToInt(weightedVal / rangeWidth);
-
-        //Debug.Log("Weighted Value: " + weightedVal);
-        //Debug.Log("Calculated Index: " + index);
-
-        return index;
+        return Mathf.FloorToInt(weightedSpawnCurve.Evaluate(Random.value) / rangeWidth);
     }
 
    //------------------------------------------------------------------------

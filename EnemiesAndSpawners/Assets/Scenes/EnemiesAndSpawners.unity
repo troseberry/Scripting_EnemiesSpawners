@@ -3153,30 +3153,30 @@ MonoBehaviour:
   spawnOnlyWhenVisible: 1
   spawnerSize: 1
   spawnRegions:
-  - m_Center: {x: -9.5, y: -2.5, z: 0}
+  - m_Center: {x: -7.5, y: -2.5, z: 0}
     m_Extent: {x: 5, y: 5, z: 0}
-  - m_Center: {x: 11.5, y: -2.5, z: 0}
+  - m_Center: {x: 9.5, y: -2.5, z: 0}
     m_Extent: {x: 1, y: 1, z: 0}
   weightedSpawnCurve:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
-      inSlope: -2.9863696
-      outSlope: -2.9863696
+      value: 0
+      inSlope: 2
+      outSlope: 2
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
-      outWeight: 0.038998697
+      outWeight: 0
     - serializedVersion: 3
       time: 1
-      value: 0
-      inSlope: -0.017559325
-      outSlope: -0.017559325
+      value: 1
+      inSlope: 0
+      outSlope: 0
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.2083157
+      inWeight: 0
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -4824,7 +4824,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1829413805274842, guid: e5706b6e62932c1418febbb9e2ac4dfb, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1223357477557040, guid: e5706b6e62932c1418febbb9e2ac4dfb, type: 2}
       propertyPath: m_IsActive
