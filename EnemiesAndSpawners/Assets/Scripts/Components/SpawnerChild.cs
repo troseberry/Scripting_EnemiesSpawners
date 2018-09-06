@@ -4,10 +4,18 @@ using UnityEngine;
 
 public class SpawnerChild : MonoBehaviour 
 {
-   public Spawner spawner;
+    public Spawner spawner;
+    public SpawnOncoming oncomingSpawner;
 
-   private void OnDestroy()
-   {
-      spawner.ObjectDestroyed(); 
-   }
+    private void OnDestroy()
+    {
+        if (spawner != null)
+        {
+            spawner.ObjectDestroyed();
+        }
+        else
+        {
+            oncomingSpawner.ObjectDestroyed();
+        }
+    }
 }
